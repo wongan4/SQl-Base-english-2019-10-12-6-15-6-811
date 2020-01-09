@@ -1,0 +1,4 @@
+create database training
+create table training.student (id decimal, name varchar(20), age decimal, sex varchar(10))
+insert into training.student values (001, 'zhangsan', 18, 'male')
+insert into training.student values (002, 'lisi', 20, 'female')
