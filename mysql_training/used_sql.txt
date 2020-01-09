@@ -2,3 +2,13 @@ create database training
 create table training.student (id decimal, name varchar(20), age decimal, sex varchar(10))
 insert into training.student values (001, 'zhangsan', 18, 'male')
 insert into training.student values (002, 'lisi', 20, 'female')
+
+create table training.subject (id decimal, subject varchar(20), teacher varchar(20), description varchar(100))
+insert into training.subject values (1001, 'Chinese', 'Mr. Wang', 'the exam is easy')
+insert into training.subject values (1002, 'math', 'Miss Liu', 'the exam is difficult')
+
+create table training.score (id decimal, student_id varchar(10), subject_id varchar(10), score float)
+insert into training.score values (1, '001', '1001', 80)
+insert into training.score values (2, '002', '1002', 60)
+insert into training.score values (3, '001', '1001', 70)
+insert into training.score values (4, '002', '1002', 60.5)
